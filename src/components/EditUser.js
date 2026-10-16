@@ -54,7 +54,7 @@ function EditUser() {
   const getUserData = async()=>{
     try{
 
-      const response = await axios.get(`http://localhost:5000/api/get-singleuser/${id}`,{
+      const response = await axios.get(`https://diva-repo-1.onrender.com/api/get-singleuser/${id}`,{
         headers:{
           "Content-Type":"application/json",
           "Authorization":`Bearer ${token}`
@@ -79,7 +79,7 @@ function EditUser() {
 
     setErrors({});
     try {
-      const response = await axios.put(`http://localhost:5000/api/update-user/${id}`,formData,{
+      const response = await axios.put(`https://diva-repo-1.onrender.com/api/update-user/${id}`,formData,{
         headers:{
           "Content-Type":"application/json",
           "Authorization":`Bearer ${token}`

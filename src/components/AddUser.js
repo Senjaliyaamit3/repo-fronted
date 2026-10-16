@@ -110,7 +110,7 @@ function AddUser() {
       }
 
       const response = await axios.post(
-        "http://localhost:5000/api/add-user",
+        "https://diva-repo-1.onrender.com/api/add-user",
         data_form,
         {
           headers: {

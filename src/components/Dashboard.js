@@ -16,7 +16,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/get-user",
+        "https://diva-repo-1.onrender.com/api/get-user",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -59,7 +59,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const response = await axios.delete(
-        `http://localhost:5000/api/delete-user/${id}`,
+        `https://diva-repo-1.onrender.com/api/delete-user/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
